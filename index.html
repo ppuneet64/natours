@@ -15,6 +15,32 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation-checkbox" id="nav-togle" />
+      <label for="nav-togle" class="navigation-button">
+        <span class="menu-bar">&nbsp;</span>
+      </label>
+      <div class="navigation-bg">&nbsp;</div>
+      <nav class="navigation-nav">
+        <ul class="navigation-nav-list">
+          <li class="navigation-nav-list-item">
+            <a href="#" class="navigation-nav-list-item-link">About Natours</a>
+          </li>
+          <li class="navigation-nav-list-item">
+            <a href="" class="navigation-nav-list-item-link">Your Benifits</a>
+          </li>
+          <li class="navigation-nav-list-item">
+            <a href="" class="navigation-nav-list-item-link">Popular Tours</a>
+          </li>
+          <li class="navigation-nav-list-item">
+            <a href="" class="navigation-nav-list-item-link">Stories</a>
+          </li>
+          <li class="navigation-nav-list-item">
+            <a href="" class="navigation-nav-list-item-link">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header--logo-box">
         <img src="/img/logo-white.png" alt="Logo" class="header--logo" />
@@ -123,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondry">Most popular tours</h2>
         </div>
@@ -153,7 +179,7 @@
                     <p class="card--price-only">Only</p>
                     <p class="card--price-value">$279</p>
                   </div>
-                  <a href="" class="btn btn--white">Book Now</a>
+                  <a href="#modal" class="btn btn--white">Book Now</a>
                 </div>
               </div>
             </div>
@@ -183,7 +209,7 @@
                     <p class="card--price-only">Only</p>
                     <p class="card--price-value">$270</p>
                   </div>
-                  <a href="" class="btn btn--white">Book Now</a>
+                  <a href="#modal" class="btn btn--white">Book Now</a>
                 </div>
               </div>
             </div>
@@ -213,7 +239,7 @@
                     <p class="card--price-only">Only</p>
                     <p class="card--price-value">$270</p>
                   </div>
-                  <a href="" class="btn btn--white">Book Now</a>
+                  <a href="#modal" class="btn btn--white">Book Now</a>
                 </div>
               </div>
             </div>
@@ -223,6 +249,209 @@
           <a href="#" class="btn btn--green">Discover all tours</a>
         </div>
       </section>
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video--content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondry">We make people genuninely happy</h2>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story--shape">
+              <img
+                src="img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story--img"
+              />
+              <figcaption class="story--caption">Mary Smith</figcaption>
+            </figure>
+            <div class="story--text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                I had the best week ever with my family
+              </h3>
+              <p class="story--desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas culpa nobis minima sequi debitis suscipit qui error
+                velit dolores, incidunt magni, sed, in laudantium. Voluptatem
+                quibusdam vel dolorum. Recusandae, nemo. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Voluptas culpa nobis minima
+                sequi debitis suscipit qui error velit dolores, incidunt magni,
+                sed, in laudantium.
+              </p>
+            </div>
+          </div>
+          <div class="story">
+            <figure class="story--shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story--img"
+              />
+              <figcaption class="story--caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story--text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                WOW! My life is diffrent now
+              </h3>
+              <p class="story--desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas culpa nobis minima sequi debitis suscipit qui error
+                velit dolores, incidunt magni, sed, in laudantium. Voluptatem
+                quibusdam vel dolorum. Recusandae, nemo. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Voluptas culpa nobis minima
+                sequi debitis suscipit qui error velit dolores, incidunt magni,
+                sed, in laudantium.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text">
+          <a href="#" class="btn-text">Read all stories &rarr;</a>
+        </div>
+      </section>
+      <section class="section-booking">
+        <div class="row">
+          <div class="booking">
+            <div class="booking-form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondry">Start Booking Now</h2>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="full-name"
+                    required
+                    id="full-name"
+                    placeholder="Full Name"
+                  />
+                  <label for="full-name" class="form-label">Full Name</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    required
+                    id="email"
+                    placeholder="Email"
+                  />
+                  <label for="email" class="form-label">Email</label>
+                </div>
+                <div class="form-group">
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      class="form-group-radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form-group-radio-label">
+                      <span class="form-group-radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+                  <div class="form-group-radio">
+                    <input
+                      type="radio"
+                      class="form-group-radio-input"
+                      id="big"
+                      name="size"
+                    />
+                    <label for="big" class="form-group-radio-label">
+                      <span class="form-group-radio-button"></span>
+                      Big tour group
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn--green">
+                    Continue &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="img/logo-green-2x.png" alt="" class="footer-logo-img" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-list-item">
+                <a href="#" class="footer-link">Company</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="" class="footer-link">Contact Us</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="" class="footer-link">Careers</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="" class="footer-link">Privacy Policy</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a href="" class="footer-link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer-copyright">
+            <a href="#" class="footer-link">Copyright &copy; Puneet Pandey</a>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+            omnis quaerat dicta laudantium temporibus doloremque voluptas? Atque
+            dolores amet minima
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <a href="#section-tours" class="modal-close">&times;</a>
+        <div class="modal-content-left">
+          <img
+            src="img/nat-8.jpg"
+            alt="Popup Images"
+            class="modal-content-left-img"
+          />
+          <img
+            src="img/nat-9.jpg"
+            alt="Popup Images"
+            class="modal-content-left-img"
+          />
+        </div>
+        <div class="modal-content-right">
+          <h2 class="heading-secondry u-margin-bottom-small">
+            Start Booking Now
+          </h2>
+          <h2 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; please read these terms before booking
+          </h2>
+          <p class="modal-content-right-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nemo
+            autem dignissimos, necessitatibus omnis reiciendis dolor, voluptas
+            consequuntur molestias hic fugit itaque, atque mollitia et! Maiores,
+            quaerat? Debitis, numquam ratione? Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Repellat culpa earum sunt placeat,
+            praesentium cupiditate voluptates corrupti blanditiis laborum amet,
+            quam illum sapiente laboriosam quas dignissimos omnis voluptatem
+            accusamus dolores.
+          </p>
+          <a href="#" class="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
