@@ -17,10 +17,10 @@
     background-color: rgba($color-white, 0.5);
     font-family: inherit;
     outline: none;
-    border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
     border: none;
+    border-bottom: 3px solid transparent;
     transition: all 0.1s ease;
     &:focus {
       outline: none;
@@ -84,6 +84,14 @@
       &-input:checked + &-label > &-button::after {
         background-color: $color-primary;
         opacity: inherit;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        display: block;
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
       }
     }
     .btn {

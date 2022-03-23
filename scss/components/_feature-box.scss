@@ -9,6 +9,9 @@
   &:hover {
     transform: translateY(-1.5rem) scale(1.3);
   }
+  @include respond(tablet) {
+    padding: 2rem;
+  }
   &--icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;

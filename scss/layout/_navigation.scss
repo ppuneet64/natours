@@ -8,6 +8,7 @@
   &-checkbox:checked ~ &-nav {
     opacity: 1;
     width: 100vw;
+    visibility: visible;
   }
   &-checkbox:checked + &-button .menu-bar {
     background-color: transparent;
@@ -25,14 +26,20 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 5rem;
+    right: 5rem;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     padding: 2rem;
     text-align: center;
     cursor: pointer;
+
+    @include respond(tablet) {
+      top: 12px;
+      right: 12px;
+    }
+
     .menu-bar {
       position: relative;
       margin-top: 1.5rem;
@@ -68,12 +75,18 @@
     }
   }
   &-bg {
-    height: 6rem;
-    width: 6rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: 5rem;
+    right: 5rem;
+
+    @include respond(tablet) {
+      top: 12px;
+      right: 12px;
+    }
+
     background-image: radial-gradient(
       $color-primary-light,
       $color-primary-dark
@@ -90,6 +103,7 @@
     opacity: 0;
     width: 0;
     transition: all 0.5s cubic-bezier(0.86, 0, 0, 0.7);
+    visibility: hidden;
     &-list {
       @include centerElement;
       list-style: none;
